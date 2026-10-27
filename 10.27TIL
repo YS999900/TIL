@@ -38,4 +38,6 @@ wq = 저장하고 나오기
 q! = 그냥 나가기 
 
 3교시
-햣
+git log --oneline = 현재 위치 한줄요약?
+git checkout (f91aaf0, main...) = 지정한 위치로 이동
+
