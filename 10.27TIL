@@ -1,0 +1,41 @@
+rm - 삭제
+rm -rf 하위폴더 전체삭제(shifr+delete)
+# h1 
+echo 파일에 문구 추가
+cat 파일 확인
+ctrl+l = clear
+ctrl+c = 프로세스 중단 빠져나오기
+명령어 -옵션 
+- 하나시 축약된 단어 옵션
+-- 두개시 풀스펠링 옵션
+git --version
+git config --global user.email "sfsk@sdlk.com" 작업전 누가 작업했는지를 확인하기 위한 이메일 등록 방법
+git config --global user.name "yusseong"
+git config --global --unset uesr.(???) 잘못 작성한 내용 삭제
+
+2교시
+git init = git 초기화
+git status = 파일 상태 확인?
+touch = 파일 만들기(파일 옆 u 아직 파일을 추가 안한상태 인식하는 명령을 해줘야함)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+git add = 파일 추가하기 인식시키기(파일 옆 A로 표기됨)
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+git commit -m "feat: add README.md"(파일 옆 없어짐 저장완료)
+commit = 기록을 남긴다
+git log = 마지막 commit한 사용자 확인 가능
+
+ctrl+shift+v = 작업물 미리보기 및 코드로 돌아오기(우측상단에서 수동으로 뷰 설정 가능)
+git add . = 현재 파일 기준으로 전체 저장
+
+docs:헤더 내용 추가
+
+w = 저장하기
+wq = 저장하고 나오기
+q! = 그냥 나가기 
+
+3교시
+햣
