@@ -1,8 +1,9 @@
 rm - 삭제
 rm -rf 하위폴더 전체삭제(shifr+delete)
 # h1 
-echo 파일에 문구 추가
-cat 파일 확인
+echo = pint 기능
+>> = 파일추가
+cat = 파일 확인
 ctrl+l = clear
 ctrl+c = 프로세스 중단 빠져나오기
 명령어 -옵션 
@@ -40,4 +41,11 @@ q! = 그냥 나가기
 3교시
 git log --oneline = 현재 위치 한줄요약?
 git checkout (f91aaf0, main...) = 지정한 위치로 이동
+git remote -v = 현재 연결중인 원격리포가 있는지
+git remote add origin () = origin을 별명으로 origin 뒷 주소를 원격주소로 등록 
+origin = 뒤에 있는 내용을 origin을 별명으로 삼아 origin 입력시 뒤에 적어둔 내용을 실행 
+
+4교시
+
+
 
