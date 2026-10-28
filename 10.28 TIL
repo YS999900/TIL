@@ -1,6 +1,45 @@
 mkdir kant-study 폴더 생성 파일 및 폴더 생성시 공백사용하지 말고 언더바(-) or 대쉬(-) 사용
 현재 폴더에서 k로 시작하는 폴더 확인 방법 ls k*
-history에서 번호 확인 후 (번호!) 하면 이전명령어 재사용
+history에서 번호 확인 후 (!번호) 하면 이전명령어 재사용
 temp.dat 파일 생성(깃이 인식하지 않게 하기) = touch .gitignore 파일 만들고 들어가서 *.dat 입력 후 저장하면 .dat 파일은 깃에 인식하지 않겠다.
 gitignore는 개인 정보 등 중요사항을 서버에 올리지 않기 위한 것이다.
 리눅스 환경에서는 폴더도 파일로 인식한다
+git remote -v 연결된 원격주소 확인
+git remote add (origin, backup) 두개 등록한 경우 따로 관리 가능
+git remote remove () 연결된 원격주소 삭제
+
+
+git log --oneline 시에 코드가 
+c009a72 (HEAD -> main) docs: Logs 폴저 제외
+c310a46 (origin/main) feat: .gitignore 파일 생성
+두줄로 나뉘어 있다면 아직 원격 주소에 로컬 수정한 내용이 업로드 되지 않음 
+로컬과 원격이 같다면 한줄로 표기
+c009a72 (HEAD -> main, origin/main) docs: Logs 폴더 제외
+
+git clone https://github.com/YS999900/kant-study.git 
+clone 주소 입력시 주소에 있는 파일을 현재 위치에 설치함
+
+git add -A
+
+커밋컨벤션 목록 내용
+docs~sytle
+
+git commit -m "docs: 깃 초기화 명령어 추가 (WIP)" WIP= 아직 작업중이라는 말
+
+git reset --soft (지정코드) = 지정코드 단계로 되돌아감(작업 내용 스테이징 단계)
+git reset --mixed (지정코드) = 지정코드 단계로 되돌아감(작업 내용 워크디렉토리 단계)
+git reset --hard (지정코드) = 지정코드 단계로 되돌아감(작업 내용 삭제)
+
+git reflog = 지금까지 모든 명령어를 되돌아 갈 수 있음 reset 포함
+git reset --hard HEAD@{?} = HEAD 시점까지 되돌아감
+
+
+branch = 기존 기능을 건드리지 않고 새로운 작업(가지치기) main에 HEAD 시점에서 복사 이후 커밋하면 
+git branch (폴더명)/(파일명) = (폴더명) 아래로 (파일명) 파일 생성
+git checkout () = 헤드를 메인에서 feature/login으로 이동
+git branch --delete () = 브렌치 삭제
+git branch -D () = 브렌치 삭제
+git branch list = 브렌치 리스트
+git checkout -b () = -b 바로 생성 및 이동
+
+git  e () = ()를 현재위치에 merge[병합]한다
