@@ -35,7 +35,7 @@ git reset --hard HEAD@{?} = HEAD 시점까지 되돌아감
 
 
 branch = 기존 기능을 건드리지 않고 새로운 작업(가지치기) main에 HEAD 시점에서 복사 이후 커밋하면 
-git branch (폴더명)/(파일명) = (폴더명) 아래로 (파일명) 파일 생성
+git branch (파일명)/(파일명) = 브랜치 생성 파일명/파일명의 /는 실제 폴더를 만드는 것이 아니다. Branch 이름을 보기 좋게 구분하는 방식이다.
 git checkout () = 헤드를 메인에서 feature/login으로 이동
 git branch --delete () = 브렌치 삭제
 git branch -D () = 브렌치 삭제
