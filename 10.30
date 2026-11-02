@@ -1,0 +1,86 @@
+pytion 설치 
+터미널환경에서 
+winget search uv
+winget install uv
+uv --version
+
+
+uv init --no-package 실행 = .git, gitignore를 포함한 파이선 환경 파일들 설치
+ls -al 설치파일 확인
+uv run main.py = 파이썬 가상환경 만들기
+uv init --no-package --python 3.13 = 3.13 버전의 파이썬 환경 파일들 설치
+cat pyproject.toml = 내용 확인
+uv python pin 3.12 = 낮은버전을 하면 에러가 남 pyproject.toml에서 버전을 바꾸고 다시 실행하면 실행 됨
+vi pyproject.toml = vim환경? 에서 열기
+cat .python-version = 현재 버전 확인
+
+uv add fastapi = fastapi 설치
+uv tree --depth 1 = 
+uv remove fastapi = 삭제
+uv sync = 맞는 패키지를 설정해준다? 
+which python = 가상환경 확인?
+uv run main.py = 파이썬 실행
+source .venv/Scripts/activate = 가상환경 연결
+source = 환경변수 개선?
+which python =py
+deactivate = 가상환경 종료
+터미널에 python = python 환경 열기
+
+ctrl+shift+e = 파일탭 바로이동
+ctrl+shift+x = 확장파일설치탭 바로이동
+
+파일생성(jupyter 확장자 설치해야 ipynb 파일 됨)
+touch chapter01.ipynb
+
+확장자 클릭 후
++code 생성
+import sys 
+print("Hello, World!")
+print(sys.executble)
+crtl+enter = 실행
+crtl+enter = 실행 후 밑에 빈쉘생성
+
+price = 1000
+print(price) = 1000
+#주석: 실행되지 않는 영역, 소스코드의 설명
+total = price * 5
+
+print(total) = 5000
+
+## 주피터 노트북 단축키
+- A : 위에 쉘 추가
+- B : 아래에 쉘 추가
+- DD : 해당 쉘 삭제
+- M : 마크다운으로 전환
+- Y : 코드로 전환
+
+---
+### 변수 이름 규칙
+
+- 숫자로 시작 불가 :  1_name (X)
+- 공백 불가 : user name (X)
+- 하이픈(-) 불가 : user-age (X)
+- 예약어 사용불가 : if, def (X)
+
+
+### 컨벤션
+- 스네이크 표기법 : user_name, value_list
+
+### 다른 표기법
+- 파스칼 케이스 : UserName, ValueList
+- 카멜 케이스 (단봉낙타법) : userName
+
+# 정수형 자료형
+age = 25
+# 실수 자료형
+pi = 3.14
+# 불리언 자료형(boolean)
+is_alive = True
+# 문자 자료형
+user_name = "BaeYuSeong"
+# 배열 array
+grade_type = [1, 2, 3, 4]
+
+
+
+설치파일 : jupyter, python 
