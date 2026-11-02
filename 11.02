@@ -1,0 +1,39 @@
+### 변수 재할당
+
+```python
+age = 20 # 메모리에 20 객체를 생성, age 메모리 주소를 기억
+age = 25 # 메모리에 25 객체를 생성, age -> 25
+print(age)
+```
+
+
+### Garbage collector 가비지 컬렉터
+- 메모리 할당 해제를 개발자가 신경 쓰지 않는다.
+
+x = 10
+print(type(x))
+print(id(x))
+
+x = "hello"
+print(type(x))
+print(id(x))
+
+money = 5000
+
+money = money + 2000
+print(money)
+
+github cil 설치 = 터미널 환경에서 바로 깃허브 레포 연동
+
+gh --version = github cil 설치버전 확인
+
+gh auth login = github와 연동
+
+gh repo list = github 리포 목록 확인
+
+$ gh repo create kant_python --private = github 리포에 kant_python 이름으로 private로 생성
+
+리포 터미널 환경에서 삭제 순서
+1. gh repo delete https://github.com/YS999900/kant_python
+2. YS999900/kant_python
+3.
