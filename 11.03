@@ -1,0 +1,228 @@
+## 딕셔너리 (Dictionaray)
+
+- {"키": "값"}
+- "키" 중복 불가
+- '값" 중복 가능
+- 추가하는 순서를 유지
+#
+# {"a":1}
+# {"a":1}, {"b":2}
+# print({"a": 1, "b": 2})
+print({"a": 1, "b": 2})
+
+user_info = {
+"name": "BaeYuSeong",
+"age": 30
+}
+
+print(user_info)
+
+print(user_info["age"]) # 키로 값을 가져오기
+user_info["age"] = 32
+print(user_info["age"])
+user_info["role"] = "Tutor"
+
+print(user_info)
+### 삭제
+user_info = {
+
+"name": "BaeYuSeong",
+"age": 30,
+"role": "admin"
+}
+
+print (user_info)
+# del 메서드 사용
+del user_info["role"]
+
+print (user_info)
+
+# pop 사용 : 꺼내면서 삭제
+age = user_info.pop("age")
+print (age, user_info)
+### 딕셔너리 주요 메서드
+
+- keys(), values(), items()
+menu = {"coffe" : 4000, "tea": 4500}
+
+# key 목로 조회
+print(menu.keys())
+# value 목록조회
+print(menu.values())
+# items 조회 (키, 값) 튜플 형태로 리턴
+print(menu.items())
+
+# 딕셔너리는 인덱서 방식으로 값을 참조 불가 > list로 변환
+print(list(menu.keys())[0])
+
+print(sum(menu.values()))
+print ("coffee" in menu) # True
+print ( 4000 in menu)
+
+print ( 4000 in menu.values()) # True
+# menu["cake"]
+price = menu.get("cake", 5000)
+
+print(price)
+
+# default 값이 없는 경우 none
+print(menu.get("cake"))
+
+print(menu.get("coffee", 0))
+
+print(menu)
+### 집합 (set)
+
+수학 집합 : 중복 없고, 순서 없는 자료형
+
+- 중괄호 사용
+- set() 함수를 생성
+grade = set([1, 2, 2, 3, 3, 3])
+
+print(grade)
+print(type({})) # {} 빈 딕셔너리
+print(type(set())) # set() 빈 집합
+print({1, 2, 2}) # 집합
+s = {1, 2}
+
+s.add(2)
+s.add(5)
+
+print(s)
+
+s.remove(1)
+print(s)
+
+s.discard(20) # 없는 키 삭제할 때도 오류값 없음
+print(s)
+set_a = {1, 2, 3}
+set_b = {3, 4, 5}
+
+print(set_a & set_b) # 교집합 
+print(set_a | set_b) # 합집합
+print(set_a - set_b) # 차집합
+print(3 in set_a) # 포함 여부
+### 중복제거
+# 원시 데이터
+raw_emails = ["a@sparta.com", "b@sparta.com", "a@sparta.com"]
+
+# 집합으로 중복 제거
+unique_set = set(raw_emails)
+
+print(list(unique_set))
+
+print("# 중복제거 및 순서 유지")
+sort_emails = (dict.fromkeys(raw_emails))
+print(sort_emails)
+
+# sroted
+
+print(sorted(set(["c", "d", "a", "f", "a"])))
+
+제어문if문if 조건식:
+    실행할 코드 #1
+    실행할 코드 #2
+    실행할 코드 #3
+else:
+    실행할 코드 #4
+
+if 조건식1:
+    실행할 코드 #1
+    실행할 코드 #2
+    실행할 코드 #3
+elif 조건식2:
+    실행할 코드 #4
+    실행할 코드 #5
+else:
+실행할 코드 #6
+
+temp = 20
+
+if temp >= 28:
+print("에어컨을 켭니다.")
+print("1시간 후에 자동 종료됩니다.")
+print("프로그램 종료")다양한 조건식cart = ["카메라", "삼각대"]
+
+if cart:
+print("결제를 진행합니다.")
+print("결제를 진행합니다. #2") #위칸은 세칸, 여기는 네칸이면 에러.
+else:
+print("장바구니가 비었습니다.")
+if True:
+pass # 1000: 쇼핑 카트 로직 추가 예정한줄 표기법age = 19
+message = "성인" if age >= 20 else "미성년자"
+messageif 조건 설정 순서score = 95
+
+if score >= 80:
+print("B")
+elif score >= 90:
+print("A")
+
+if score >= 90:
+print("A")
+elif score >= 80:
+print("B")비교 연산
+and
+==is_login = Truehas_permission = True
+
+
+if is_login and has_permission:
+print("관리자 페이지 이동")
+
+x = 10
+if x == 10:
+print(f"x는 {x} 입니다.")for 반복문for 변수 in 반복할_데이터:
+    반복수행할_코드 #1
+    반복수행할_코드 #2리스트fruits = ["사과", "바나나", "체리"]
+
+for fruit in fruits:
+print(fruit)
+for ch in "스파르타":
+print(ch)
+menu = {"아아":4000, "홍차":4500}
+
+menu.keys()
+for key in menu:
+print(key)
+
+for name, price in menu.items():
+print(f"{name}:{price}")range() 기본 사용법for i in range(5):
+print(f"{i+1} 번째 로직 수행")범위 지정for i in range(1, 6, 2):
+print(i)
+
+print(range(5))
+print(list(range(5))) # 리스트로 변환 후 출력while 문while 조건식:
+    반복할 로직 #1
+    반복할 로직 #2
+    반복할 로직 #3num = 1
+
+while num < 3:
+print(f"현재 숫자는 {num}")
+num += 1
+count = 3
+
+while count > 0:
+print(count)
+count -= 1 # count = count -1
+for num in range(1, 6):
+if num == 3:
+print("즉시 종료")
+break
+print(f"현재 num={num}")
+while True:
+user_input = input()
+if user_input == "q":
+print("종료")
+break
+for num in range(1, 6):
+if num % 2 == 0: # 짝수
+continue
+print(f"홀수 {num}")구구단for x in range(2, 10):
+if x == 4:
+break
+
+print(f"--- {x}단 ---")
+for y in range(1, 10):
+    if y == 6:
+        break
+    print(f"{x} x {y} = {x * y}")
